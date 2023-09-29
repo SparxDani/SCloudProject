@@ -14,22 +14,22 @@ function MainBanner() {
                 <div className="carousel-item active">
                     <img src={banner1} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>Crash Bandicoot 4: it's about time</h5>
+                        <p>Porque ya era hora!</p>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img src={banner2} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h5>Doble Bandicoot, doble diversión!</h5>
+                        <p>Juega con Crash y Coco en esta multidimensional aventura!</p>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img src={banner3} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h5>Viaja por el pasado, presente y futuro!</h5>
+                        <p>Y ayuda a las nuevas mascaras cuanticas a recuperar las estabilidad dimensional!</p>
                     </div>
                 </div>
             </div>

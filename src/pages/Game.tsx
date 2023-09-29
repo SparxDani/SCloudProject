@@ -9,7 +9,7 @@ function Game(){
     return (
         <div className="centered-container">
             <div className="centered-content">
-                <h1 className="centered-title">lluvia acida</h1>
+                <h1 className="centered-title">Mini juego</h1>
                 <Unity unityProvider={unityProvider} className="centered-unity" />
             </div>
         </div>
