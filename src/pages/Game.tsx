@@ -1,18 +1,26 @@
 import { Unity, useUnityContext } from "react-unity-webgl";
 function Game(){
-    const { unityProvider } = useUnityContext({
-        loaderUrl: "/game.loader.js",
-        dataUrl: "/game.data.unityweb",
-        frameworkUrl: "/game.framework.js.unityweb",
-        codeUrl: "/game.wasm.unityweb",
+    const { unityProvider, sendMessage } = useUnityContext({
+        loaderUrl: "/Build.loader.js",
+        dataUrl: "/Build.data.unityweb",
+        frameworkUrl: "/Build.framework.js.unityweb",
+        codeUrl: "/Build.wasm.unityweb",
     });
+
+    function handleClickSpawnEnemies(){
+        sendMessage("Item", "SpawnEnemies")
+    }
+
     return (
-        <div className="centered-container">
-            <div className="centered-content">
-                <h1 className="centered-title">Mini juego</h1>
-                <Unity unityProvider={unityProvider} className="centered-unity" />
+        <>
+            <div className="centered-container">
+                <div className="centered-content">
+                    <h1 className="centered-title">Mini juego</h1>
+                    <Unity unityProvider={unityProvider} className="centered-unity" />
+                    <button onClick={handleClickSpawnEnemies}>Spawn Enemies</button>
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 export default Game
