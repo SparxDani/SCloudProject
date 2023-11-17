@@ -7,17 +7,17 @@ function Game(){
         codeUrl: "/Build.wasm.unityweb",
     });
 
-    function handleClickSpawnPlatform(){
-        sendMessage("Spawner", "SpawnAndMovePlatform")
+    function handleClickMovePlatform(){
+        sendMessage("Plataformas", "PausarMovimiento", )
     }
 
     return (
         <>
             <div className="centered-container">
                 <div className="centered-content">
-                    <h1 className="centered-title">Mini juego</h1>
+                    <h1 className="centered-title">Bounce the Star</h1>
                     <Unity unityProvider={unityProvider} className="centered-unity" />
-                    <button onClick={handleClickSpawnPlatform}>Spawn Enemies</button>
+                    <button onClick={handleClickMovePlatform}>Stop Platforms</button>
                 </div>
             </div>
         </>
