@@ -7,8 +7,8 @@ function Game(){
         codeUrl: "/Build.wasm.unityweb",
     });
 
-    function handleClickSpawnEnemies(){
-        sendMessage("Item", "SpawnEnemies")
+    function handleClickSpawnPlatform(){
+        sendMessage("Spawner", "SpawnAndMovePlatform")
     }
 
     return (
@@ -17,7 +17,7 @@ function Game(){
                 <div className="centered-content">
                     <h1 className="centered-title">Mini juego</h1>
                     <Unity unityProvider={unityProvider} className="centered-unity" />
-                    <button onClick={handleClickSpawnEnemies}>Spawn Enemies</button>
+                    <button onClick={handleClickSpawnPlatform}>Spawn Enemies</button>
                 </div>
             </div>
         </>
