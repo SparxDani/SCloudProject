@@ -10,10 +10,10 @@ function MainNav(){
                         <Link className="nav-link" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/game">Game</Link>
+                        <Link className="nav-link" to="/Game">Game</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/game">Game2</Link>
+                        <Link className="nav-link" to="/Game2">Game2</Link>
                     </li>
                 </ul>
             </div>

@@ -15,7 +15,7 @@ function Game2() {
             <div className="centered-container">
                 <div className="centered-content">
                     <h1 className="centered-title">Bounce the Star</h1>
-                    <Unity unityProvider={unityProvider} className="centered-unity" />
+                    <Unity unityProvider={unityProvider} className="centered-unity2" />
 
                 </div>
             </div>
